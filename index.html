@@ -1,0 +1,67 @@
+
+<!-- 
+  Project: languagenut Homework Hack
+  Author: z3phy.dev
+  License: Free to use, modify, and share for personal or educational purposes.
+  Disclaimer: This code is provided as-is without any warranty. 
+              Use responsibly and only in safe, legal contexts.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LN Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login" class="overlay">
+        <div class="panel">
+            <h2>Login</h2>
+            <input class="input-field" id="username_input" type="text" placeholder="Username" autocomplete="username">
+            <input class="input-field" id="password_input" type="password" placeholder="Password" autocomplete="current-password">
+            <button class="btn btn-primary" id="login_btn">Log In</button>
+        </div>
+    </div>
+
+    <div id="hw_panel" class="overlay">
+        <div class="panel">
+            <h2>Homeworks</h2>
+            <div class="checkbox-row">
+                <input type="checkbox" id="selectall">
+                <label for="selectall">Select all</label>
+            </div>
+            <div id="hw_container" class="content-container"></div>
+            <button id="do_hw" class="btn btn-success">DO THE HOMEWORK</button>
+        </div>
+    </div>
+
+    <div id="log_panel" class="overlay overlay-right">
+        <div class="panel">
+            <h2>Logs</h2>
+            <div id="hw_bar" class="progress-bar"></div>
+            <div id="log_container" class="content-container"></div>
+        </div>
+    </div>
+
+    <dialog id="settings">
+        <div class="settings-content">
+            <h3>Settings</h3>
+            <p class="settings-note">[Esc] to exit</p>
+
+            <div class="setting-group">
+                <label for="speed_slider">Completion time:</label>
+                <input type="range" min="0" max="24" value="0" id="speed_slider" step="0.1">
+                <div class="speed-display">
+                    Current: <span id="speed_display">5 seconds</span>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <button id="settings_button" class="settings-btn">Settings</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
