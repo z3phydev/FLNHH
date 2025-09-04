@@ -3,7 +3,7 @@
 A simple website to help automate your Languagenut homework.  
 This repo contains the source files for the project.
 
-Website: [http://lannhome.neocities.org/](http://lannhome.neocities.org/)
+Website: [z3phydev.github.io/FLNHH/](z3phydev.github.io/FLNHH/)
 
 ---
 
