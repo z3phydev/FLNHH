@@ -1,4 +1,4 @@
-# Languagenut-Homework-Hack
+# Languagenut Homework Hack
 
 A simple website to help automate your Languagenut homework.  
 This repo contains the source files for the project.
